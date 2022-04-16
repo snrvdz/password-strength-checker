@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.password {
+  position: relative;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  width: 425px;
+  margin-left: 9px;
+}
+
+.password:before,
+.password:after {
+  content: "";
+  height: inherit;
+  background: transparent;
+  display: block;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 3px 0;
+  position: absolute;
+  width: calc(20% - 3px);
+  z-index: 10;
+}
+
+.password:before {
+  left: calc(20%);
+}
+
+.password:after {
+  right: calc(20%);
+}
+
+.strength-0::-webkit-progress-value {
+  background-color: darkred;
+  width: 20% * 0;
+}
+
+.strength-1::-webkit-progress-value {
+  background-color: darkred;
+  width: 20% * 0;
+}
+
+.strength-2::-webkit-progress-value {
+  background-color: orangered;
+  width: 20% * 1;
+}
+
+.strength-3::-webkit-progress-value {
+  background-color: orange;
+  width: 20% * 2;
+}
+
+.strength-4::-webkit-progress-value {
+  background-color: yellowgreen;
+  width: 20% * 3;
+}
+
+.strength-5::-webkit-progress-value {
+  background-color: green;
+  width: 20% * 4;
+}
+
+.strength-0 {
+  color: darkred;
+  display: flex;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.strength-1 {
+  color: darkred;
+  display: flex;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.strength-2 {
+  color: orangered;
+  display: flex;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.strength-3 {
+  color: orange;
+  display: flex;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.strength-4 {
+  color: yellowgreen;
+  display: flex;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.strength-5 {
+  color: green;
+  display: flex;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 5px;
+}
